@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <style media="screen">
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            text-align: left;
+            border-spacing: 0px;
+        }
+    </style>
+
+    <style media="screen">
+        #t_b_1 {
+            border: 2px solid blue;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+    <style media="screen">
+        table#t01 th {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 tr:nth-child(odd) {
+            background-color: #fff;
+        }
+    </style>
+    <title>HTML Tables</title>
+</head>
+
+<body>
+    <h1>HTML tables</h1>
+    <pre>An HTML table is defined with the &lt;tabl&lt;&g&gt; tag.
+    Each table row is defined with the &lt;tr&gt; tag.
+    A table header is defined with the &lt;th&gt; tag.
+    By default, table headings are bold and centered.
+    A table data/cell is defined with the &lt;td&gt; tag.
+    The &lt;td&gt; elements are the data containers of the table.
+    They can contain all sorts of HTML elements; text, images, lists, other tables, etc.
+    </pre>
+    <h2>Sample Table: Border</h2>
+    <p>Sample table with internal CSS style.</p>
+    <table style="width:100%;">
+        <tr>
+            <th>table heading1</th>
+            <th>table heading2</th>
+            <th>table heading3</th>
+        </tr>
+        <tr>
+            <td>table definition 11</td>
+            <td>table definition 12</td>
+            <td>table definition 13</td>
+        </tr>
+        <tr>
+            <td>table definition 21</td>
+            <td>table definition 22</td>
+            <td>table definition 23</td>
+        </tr>
+    </table>
+
+    <h2>Sample Table 1: Collapse Border</h2>
+    <p>Sample table had id attribute(internal CSS) for applying style. If you want the borders to collapse into one border, add the CSS border-collapse property:</p>
+    <table id="t_b_1" style="width:100%;">
+        <tr>
+            <th id="t_b_1">table heading1</th>
+            <th id="t_b_1">table heading2</th>
+            <th id="t_b_1">table heading3</th>
+        </tr>
+        <tr>
+            <td id="t_b_1">table definition 11</td>
+            <td id="t_b_1">table definition 12</td>
+            <td id="t_b_1">table definition 13</td>
+        </tr>
+        <tr>
+            <td id="t_b_1">table definition 21</td>
+            <td id="t_b_1">table definition 22</td>
+            <td id="t_b_1">table definition 23</td>
+        </tr>
+    </table>
+    <h2>Sample Table 2: Cell padding</h2>
+    <p>Cell padding specifies the space between the cell content and its borders. If you do not specify a padding, the table cells will be displayed without padding. To set the padding, use the CSS padding property:</p>
+    <table id="t01" style="width:100%;">
+        <tr>
+            <th>table heading1</th>
+            <th>table heading2</th>
+            <th>table heading3</th>
+        </tr>
+        <tr>
+            <td>table definition 11</td>
+            <td>table definition 12</td>
+            <td>table definition 13</td>
+        </tr>
+        <tr>
+            <td>table definition 21</td>
+            <td>table definition 22</td>
+            <td>table definition 23</td>
+        </tr>
+        <tr>
+            <td>table definition 31</td>
+            <td>table definition 32</td>
+            <td>table definition 33</td>
+        </tr>
+        <tr>
+            <td>table definition 41</td>
+            <td>table definition 42</td>
+            <td>table definition 43</td>
+        </tr>
+    </table>
+    <h2>Sample Table 3: colspan and caption</h2>
+    <p>The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag.</p>
+    <p>To make a cell span more than one column, use the &quot;colspan&quot; attribute</p>
+    <table style="width:100%">
+        <caption>Contact Information</caption>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Mobile No</th>
+        </tr>
+        <tr>
+            <td>RaviKiran</td>
+            <td>9999999999</td>
+            <td>8888888888</td>
+        </tr>
+    </table>
+    <h2>Sample Table 4: rowspan</h2>
+    <p>To make a cell span more than one row, use the &quot;rowspan&quot; attribute:</p>
+
+    <table style="width:auto;">
+        <caption>Contact Information</caption>
+        <tr>
+            <th>Name</th>
+            <td>Ravikiran</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Mobile No</th>
+            <td>9999999999</td>
+        </tr>
+        <tr>
+            <td>8888888888</td>
+        </tr>
+    </table>
+</body>
+
+</html>

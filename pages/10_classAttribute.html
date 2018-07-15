@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Class attribute</title>
+    <style media="screen">
+        .first {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        .second {
+            background-color: white;
+            padding: 10px;
+        }
+
+        .half {
+            color: green;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="first">Class attribute:</h1>
+    <pre class="second half">The <b>class</b> attribute specifies one or more class names for an HTML element.
+The class name can be used by CSS and JavaScript to perform certain tasks for elements with the specified class name.
+This element has two classes plz check it.
+</pre>
+
+    <h1 class="first">Class attribute in CSS</h1>
+    <p class="second">The class name can be used in any html file and it is case sensitive.</p>
+
+    <h1>Class attribute in JavaScript </h1>
+    <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

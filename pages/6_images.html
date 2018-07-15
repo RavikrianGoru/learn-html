@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHML img tags</title>
+    <style media="screen">
+        img {
+            border-radius: 50px;
+            width: 15%;
+            height: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- style="background-image:url('../imgs/bg.jpg')" -->
+    <h1>Images Tags</h1>
+    <h2>Floating Images:</h2>
+    <p>
+        <img src="../imgs/fb.jpg" alt="FaceBook icon" title="FaceBook icon" style="float:left;width:35px;height:35px;">
+        <img src="../imgs/ln.jpg" alt="LinkedIn icon" title="LinkedIn icon" style="float:right;width:35px;height:35px;"> It is recommended to set width and height of image by using style or direct attributes. We can give url/image location for src attribute.
+        This paragrap contains flating image with some content. we can use images for hyperlinks. Loading images takes time. Large images can slow down your page. Use images carefully.
+    </p>
+    <hr>
+    <h2>Image Maps:</h2> This is about image map: click on some part of image will point to other pages/images.
+    <img src="../imgs/4.jpg" alt="Big Image" title="ImageMap" usemap="#4parts" style="border-radius: 0;width:100px;height:100px;">
+    <map name="4parts">
+        <area shape="rect" coords="0,0,50,50" href="../imgs/fb.jpg" alt="FaceBook" title="FaceBook">
+        <area shape="rect" coords="50,0,100,50" href="../imgs/ln.jpg" alt="LinkedIn" title="LinkedIn">
+        <area shape="rect" coords="0,50,50,100" href="../imgs/t.jpg" alt="Twitter" title="Twitter">
+        <area shape="rect" coords="50,50,100,100" href="../imgs/y.jpg" alt="YouTube" title="YouTube">
+    </map>
+    <hr>
+    <h2>Img tag, hyperlink, background, picture tags</h2> We can set image as background for entire html or para or for any tag.
+    <ol style="background-image:url('../imgs/bg.jpg')">
+        <li>
+            Image with inline style.
+            <img src=" ../imgs/bird.jpg " alt="Bird image " title="Bird image " style="width:15%;height:15%;border-radius:50px " />
+        </li>
+        <li>
+            This image is hyperlink <a href="5_hyperlinks.html "><img src="../imgs/panda.jpg " alt="Panda Image " title="Panda Image " /></a>
+        </li>
+        <li>
+            <img src="../imgs/baby.jpg " alt="Baby Boss Image " title="Baby Boss Image " />
+        </li>
+        </ul>
+
+        <p>HTML5 introduced the &lt;picture&gt; element to add more flexibility when specifying image resources. To see the difference drag the &quot;atom html view tab&quot; leftand right </p>
+        <picture>
+            <source media="(min-width: 650px)" srcset="../imgs/bird.jpg">
+            <source media="(min-width: 465px)" srcset="../imgs/panda.jpg">
+            <img src="../imgs/baby.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+</body>
+
+</html>

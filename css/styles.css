@@ -1,0 +1,45 @@
+body {
+    margin-left: 5;
+    margin-right: 5
+}
+h1 {
+    background-color: Tomato;
+}
+p {
+    color: blue;
+    font-family: courier;
+    text-align: left;
+}
+b{
+    border: 1px solid red;
+    border-radius: 10% / 50%;
+}
+/* The id  attributes */
+#b01{
+    border: 1px dotted blue;
+    border-radius: 10% / 50%;
+}
+#b02{
+    border: 1px dotted green;
+    border-radius: 10% / 50%;
+}
+
+/* class attribute */
+strong.s1
+{
+    border: 1px dotted green;
+    border-radius: 10% / 50%;
+    color: red;
+}
+strong{
+
+        border-radius: 30px;
+        padding: .5% 5%
+}
+
+
+pre {
+    color: green;
+    font-family: verdana;
+    text-align: left;
+}

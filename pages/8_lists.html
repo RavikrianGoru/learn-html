@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Html lists</title>
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+
+<body>
+    <h2>Unordered list:</h2>
+    <p>we can have the following types: disc,circle,sqare,none.... use the attribute <b>style="list-style-type: xyz;"</b></p>
+    <ul>
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ul>
+    <ul style="list-style-type:disc;">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ul>
+    <ul style="list-style-type:circle">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ul>
+    <ul style="list-style-type:square">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ul>
+    <ul style="list-style-type:none">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ul>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <ul id="menu1">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <h2>Ordered list:</h2>
+    <p>We can have the following types by usingthe attribute <b>type="xyz"</b></p>
+    <ol type="1">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ol>
+    <ol type="a">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ol>
+    <ol type="A">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ol>
+    <ol type="i">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ol>
+    <ol type="I">
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ol>
+    <ol type="1" start="6" reversed>
+        <li>Mikl</li>
+        <li>Cofee</li>
+        <li>Tea</li>
+    </ol>
+    <h2>Description list</h2>
+    <pre>A description list is a list of terms, with a description of each term.
+    The &lt;dl&gt; tag defines the description list,
+    the &lt;dt&gt; tag defines the term (name), and the &lt;dd&gt; tag describes each term:
+    </pre>
+    <dl>
+        <dt>Cofee</dt>
+        <dd>- Black hot coff</dd>
+        <dt>Milk</dt>
+        <dd>- White cold milk</dd>
+    </dl>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+Atom IDE:
+	1) HTML5
+	2) CSS3
+	3) JavaScript
+	4) Vanilla JavaScript
+
+	1) JQuery
+	2) AJAX/Fetch API/Json
+
+	1) cPanel
+	2) FileZilla
+	3) DNS
+
+	1) Node.js (Server side JavaScript)
+	2) Python
+	3) PHP & Ruby
+
+	1) MangoDB
+	2) MySQl
+	3) FireBase(Google)
+
+	1) Flex Box and Grid
+
+Atom IDE : https://flight-manual.atom.io/getting-started/sections/why-atom/
+
+HTML preview: ctrl+shift+H
+
+Install the fowlloing packages:
+
+	 1) emment for html/css.
+		https://docs.emmet.io/cheat-sheet/
+		atom-html-preview
+	 2) liner-jscs for JavaScript.
+		Edit and save JavaScript file : it give errors list.(including style + actual errors)
+	 3) linter-jshint for JavaScript
+		Edit and save JavaScript file : it give errors list.(only actual errors)
+ 	 4) highlight-selector
+		text highlighter
+ 	 5) open recent
+ 	 6) miniMap
+		It is useful when a file has many lines(navigation)
+	 7) git plus 8.0
+	 8) git-diff
+	 	It shows diff code changes with notations(symbol...)
+	 9) javascript-sinppet
+	 	It is used for javascript and node.js like emment for html
+	10) autom-beautify
+		code style
