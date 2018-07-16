@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- 1 -->
+    <title>Head Elements Demo</title>
+    <!-- 2 -->
+    <style media="screen">
+        li {
+            color: green;
+        }
+    </style>
+    <!-- 3 -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- 4 -->
+    <meta charset="utf-8">
+    <meta name="description" content="HTML head elements description">
+    <meta http-equiv="refresh" content="30">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="rkGoru">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 5 -->
+    <script type="text/javascript">
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+    <!-- 6 -->
+    <base href="file:///C:/Users/zgorrav/codebase/html/imgs/" target="_blank">
+</head>
+
+<body>
+    <h1>Head elements and usage</h1>
+    <p>Please head emelent and contained tags.</p>
+
+    <p id="demo">Hi JavaScript</p>
+    <button type="button" onclick="myFunction()">Try it</button> &lt;head&gt; is the container for all metada information & this data will not be displayed in html page.
+
+    <ol type="1">
+        <li>&lt;title&gt; : Defines the title of html page in browser. Displays a title for the page in search engine results.</li>
+        <li>style : Defines internal CSS</li>
+        <li>link : Defines external CSS</li>
+        <li>meta : Delement is used to specify which character set is used, page description, keywords, author, and other metadata. Define the character set, description of your web page, keywords for search engines, the author of a page, Refresh document
+            every n seconds. The viewport(HTML5): is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.</li>
+        <li>script : Defines client-side JavaScripts.</li>
+        <li>base : element specifies the base URL and base target for all relative URLs in a page</li>
+    </ol>
+
+    <img src="4.jpg" alt="4 Images" width="10%" height="10%">
+    <p>As we have specified a base URL, the browser will look for the image "4.jpg" at "file:///C:/Users/rkgoru/codebase/html/imgs/"</p>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Layouts</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the header */
+
+        header {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Style the footer */
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 10px;
+        }
+
+        /* Style the list inside the menu */
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background: #ccc;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Header
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#t1">Menu 01</a></li>
+            <li><a href="#t2">Menu 02</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h1 id="t1">CSS Layout Float</h1>
+            <pre>
+HTML5, introduced the new semantic elements that define the different parts of a web page.
+Here, We have created a layout(a header,two boxes & a footer).
+On smaller screens, the boxes stack on top of each other(plz resize the browser and check).
+        -------------------------
+        |        header         |
+        -------------------------
+        |          nav          |
+        -------------------------
+        |    section     |      |
+        |----------------| aside|
+        |    aritcle     |      |
+        -------------------------
+        |        Footer         |
+        -------------------------
+&lt;header&gt; defines header of document.
+&lt;nav&gt; defines a container for all navigation links.
+&lt;section&gt; defines the section in document.
+&lt;article&gt; defines independent self-contained article.
+&lt;asider&gt; defines content aside from the content (like a sidebar)
+&lt;footer&gt; defines footer of document.
+&lt;details&gt; defines additional information.
+&lt;summary&gt; Defines heading for the &lt;details&gt; tag.
+            </pre>
+        </article>
+    </section>
+    <section>
+        <article>
+            <h1 id="t2">HTML Layout Techniques</h1>
+            <pre>
+There are four different ways to create multicolumn layouts.
+                <ol>
+                    <li>HTML tables(not recommended):
+    The purpose of tables to show data in tabular format.
+    If we use tabled for layout redesigning is difficult.
+    Use w3.css or Boostrap for layout design.
+                    </li>
+                    <li>CSS float property:
+    It is common to do entire web layout by using this.
+    Floating elements are tied to the document flow, which may harm the flexibility.
+
+                    </li>
+                    <li>CSS flexbox:
+    Flexbox is a new layout mode in CSS3.
+    It ensures that elements behave predictably when the page layout
+    must accommodate different screen sizes and different display devices.
+    Does not work in IE10 and earlier.
+                    </li>
+                </ol>
+            </pre>
+        </article>
+    </section>
+
+
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+
+</html>
