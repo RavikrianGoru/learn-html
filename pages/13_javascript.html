@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script>
+        function sayHellow() {
+            document.getElementById("wish").innerHTML = "Hellow World!";
+            document.getElementById("wishHead").style.fontSize = "25px";
+            document.getElementById("wishHead").style.color = "Green";
+            document.getElementById("wishHead").style.backgroundColor = "white";
+
+        }
+
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = '../imgs/switchOff.png';
+            } else {
+                pic = '../imgs/switchOn.png';
+            }
+            document.getElementById('lightID').src = pic;
+        }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+</head>
+
+<body>
+    <h1>JavaScript</h1>
+    <p>JavaScript is a client side scripting. Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content. </p>
+
+    <h3>Time plz</h3>
+    <button type="button" onclick="document.getElementById('date1').innerHTML=Date()">Date</button>
+    <p id="date1" style="color:green"></p>
+
+    <h3 id="wishHead">Say Hello!</h3>
+    <button type="button" onclick="sayHellow()">Wish</button>
+    <p id="wish" style="color:red"></p>
+
+    <h3>Switch-On or Switch-Off light? <img id="lightID" src="../imgs/switchOff.png" alt="Light Image" title="Light" width="5%" height="7%"> </h3>
+    <button type="button" onclick="light(1)">Switch-On</button>
+    <button type="button" onclick="light(0)">Switch-Off</button>
+
+    <h3>NoScript</h3>
+    <p>&lt;noscript&gt; tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts </p>
+
+</body>
+
+</html>
