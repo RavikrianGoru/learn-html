@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Input Attributes</title>
+</head>
+
+<body>
+    <form class="" id="form1" target="_self" action="abc.jsp" method="post" novalidate>
+        <h3>HTML Attributes</h3>
+        <ol>
+            <li>value="xyz"
+                <br/>Name: <input type="text" name="fName" value="xyz">
+            </li>
+            <li>readonly
+                <br>Org: <input type="text" value="GL" readonly>
+            </li>
+            <li>disabled
+                <br/> Sal: <input type="text" value="Rs. 11111/-" disabled>
+            </li>
+            <li>size="10"
+                <br/>PIN: <input type="text" size="10">
+            </li>
+            <li>maxlength="12"
+                <br/>Mobile No:<input type="text" maxlength="12"></li>
+            <li><input type="submit" value="Submit"></li>
+        </ol>
+        <h3>HTML5 Attributes for &lt;input&gt; and/or &lt;form&gt;</h3>
+    </form>
+    <ol>
+        <li>autocomplete: it can be applied to &lt;form&gt; and &lt;input&gt;. <br/> we can apply this attribute to input types such as text, search, url, tel, email, password, datepickers, range, and color. Email: <input type="email" name="emailID" autocomplete="on"
+                form="form1">
+        </li>
+        <li>novalidate: form attribute, Doent not validate form</li>
+        <li>autofocus: input attribute, cursur will pint to atotofocued html element.
+            <br/>Order: <input type="text" name="food" autofocus form="form1" />
+        </li>
+        <li>form: form attribute, It points html element to existing form
+        </li>
+        <li>formaction: input attribute, sumbit the form to other page.
+            <input type="submit" value="Submit" form="form1" formaction="abc1.jsp"></li>
+        <li>formtype: <pre>The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").
+The formenctype attribute overrides the enctype attribute of the &lt;form&gt; element.
+The formenctype attribute is used with type="submit" and type="image".</pre>
+            <input type="submit" formenctype="multipart/form-data" form="form1" value="Submit as Multipart/form-data">
+        </li>
+        <li>formmethod:<pre>
+The formmethod attribute defines the HTTP method for sending form-data to the action URL.
+The formmethod attribute overrides the method attribute of the &lt;form&gt; element.
+The formmethod attribute can be used with type="submit" and type="image".</pre>
+            <input type="submit" value="FormMethod" formmethod="post" form="form1">
+        </li>
+        <li>formnovalidate: <pre>The formnovalidate attribute overrides the novalidate attribute of the &lt;form&gt; element.
+The formnovalidate attribute can be used with type="submit".</pre>
+            <input type="submit" value="FormValidate" formnovalidate form="form1">
+        </li>
+        <li>formtarget: <pre>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.
+The formtarget attribute overrides the target attribute of the &lt;form&gt; element.
+The formtarget attribute can be used with type="submit" and type="image".
+<input type="submit" name="formTarget" formtarget="_blank" value="FormTarget" form="form1">
+</pre></li>
+        <li>height and width :The height and width attributes specify the height and width of an &lt;input type="image"&gt; element. <br/>
+            <input type="image" src="../imgs/panda.jpg" alt="Panda Image" title="Panda" height="20px" width="20px" form="form1" />
+        </li>
+        <li>list :The list attribute refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element. <br/>
+            <input list="browsers" name="browsers" form="form1">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+        </li>
+        <li>min, max, placeholder, required, multiple, pattern, step <br/> Contry code: <input type="text" name="patternText" pattern="[A-Za-z]{3}" placeholder="IND" required form="form1" /> </li>
+        <li></li>
+    </ol>
+</body>
+
+</html>
