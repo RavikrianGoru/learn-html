@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML forms</title>
+
+    <style media="screen">
+        strong {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> HTML <strong>&lt;form&gt;</strong> is used to collect user inputs.</h2>
+    <pre>
+<ol type="I"><li><strong>Action Attribute</strong>
+<strong>action=""</strong> attribute defines the action to be performed when the form is submitted.
+Normally, the form data is sent to a web page on the server when the user clicks on the submit button.
+<strong>Ex: &lt;form action="/abc.jsp"&gt;</strong></li>
+        <li><strong>Target Attribute</strong>
+<strong>target=""</strong> attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.
+Default : <strong>_self</strong>
+All possible values: <strong>_self, _blank, _parent & _top</strong></li>
+        <li><strong>Method Attribute</strong>
+The <strong>method=""</strong> attribute specifies the HTTP method (GET or POST) to be used when submitting the form data.
+All possible values: <strong>get or post</strong>
+
+The default method when submitting form data is GET & is used, the submitted form data will be visible in the page address field.
+<strong>Notes On GET:</strong>
+    Appends form-data into the URL in name/value pairs
+    The length of a URL is limited (about 3000 characters)
+    Never use GET to send sensitive data! (will be visible in the URL)
+    Useful for form submissions where a user want to bookmark the result
+    GET is better for non-secure data, like query strings in Google
+
+Always use POST if the form data contains sensitive or personal information.
+The POST method does not display the submitted form data in the page address field.
+<strong>Notes on POST:</strong>
+    POST has no size limitations, and can be used to send large amounts of data.
+    Form submissions with POST cannot be bookmarked</li>
+        <li><strong>Name Attribute</strong>
+Each input field must have a name attribute to be submitted.
+If the name attribute is omitted, the data of that input field will not be sent at all</li>
+<li><strong>Other attributes: </strong>
+<strong>accept-charset</strong>:Specifies the charset used in the submitted form(default: the page charset).
+<strong>autocomplete: </strong>Specifies the browser should autocomplete the form(default: on).
+<strong>enctype: </strong>Specifies the encoding of the submitted data(default: is url-encoded).
+<strong>novalidate: </strong>Specifies that the browser should not validate the form.</li>
+</ol>
+<h2>HTML form element can have the following elements</h2>
+<ol type="1">
+<li>HTML element <strong>&lt;fieldset&gt;:</strong> it grougs the related data in from.
+<strong>&lt;legend&gt;</strong> provides caption for <strong>&lt;fieldset&gt;:</strong>
+</li>
+<li>HTML element <strong>&lt;input&gt;</strong> can have the following input type; all possible values for <strong>type</strong> attribute
+text
+radio
+submit
+</li>
+<li><strong>&lt;select&gt;</strong> element defines a drop-down list & <strong>&lt;option&gt;</strong> elements defines an option that can be selected.
+<strong>&lt;option&gt;</strong> : By default, the first item in the drop-down list is selected.
+    To define a pre-selected option, add the <strong>selected</strong> attribute to the option.
+    <strong>value</strong> to specify the number of visible values.
+    <strong>multiple</strong> attribute to allow the user to select more than one value.
+</li>
+<li><strong>&lt;textarea&gt;</strong> defines a multi-line input field (a text area).
+    <strong>rows</strong> attribute specifies the visible number of lines in a text area.
+    <strong>cols</strong> attribute specifies the visible width of a text area.
+</li>
+<li><strong>&lt;button&gt;</strong> element defines a clickable button.
+</li>
+</ol>
+<h2>HTML5 form elements</h2>
+
+</pre>
+</body>
+
+</html>

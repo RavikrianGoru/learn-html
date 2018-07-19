@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+        strong {
+            color: green;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .left {
+            background-color: #2196F3;
+            padding-left: 10px;
+            float: left;
+            width: 20%;
+
+        }
+
+        .mid {
+            background-color: #f1f1f1;
+            padding-left: 10px;
+            float: left;
+            width: 60%;
+        }
+
+        .right {
+            background-color: #4CAF50;
+            padding-left: 10px;
+            float: left;
+            width: 20%;
+        }
+
+        /* Use a media query to add a break point at 800px: */
+
+        @media screen and (max-width:800px) {
+            .left,
+            .main,
+            .right {
+                width: 100%;
+                /* The width is 100%, when the viewport is 800px or smaller */
+            }
+    </style>
+</head>
+
+<body>
+    <h3>Responsive Web Design</h3>
+    <p>
+        Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).
+    </p>
+
+    <ol>
+        <li>Setting the <strong>viewport</strong> we have to use <strong>&lt;meta&gt;</strong> to set responsive web pages.
+            <strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</strong>
+        </li>
+
+        <li>Responsive Images by setting <strong>width</strong> property
+        </li>
+
+        <li>Responsive Images by setting <strong>max-width</strong> property the image will scale down if it has to, but never scale up to be larger than its original size.
+        </li>
+
+        <li>Responsive Images by <strong>&lt;picture&gt;</strong> We can show different images based on browser width.
+        </li>
+
+        <li>Responsive Test by setting vw units
+        </li>
+        <li>Media queries:Resize the browser window.
+
+        </li>
+    </ol>
+
+    <p><strong>Responsive Image: The following images has set with width=100%</strong></p>
+    <img src="../imgs/4.jpg" alt="Bird Image" style="width:30%;" />
+
+    <p><strong>Responsive Image: The following images has set with max-width=100%</strong></p>
+    <img src="../imgs/4.jpg" alt="Bird Image" style="max-width:20%;height:auto;" />
+
+    <p><strong>Responsive Image with &lt;picture&gt;</strong></p>
+    <picture>
+        <source srcset="../imgs/bird.jpg" media="(max-width: 600px)" />
+        <source srcset="../imgs/baby.jpg" media="(max-width: 1500px)" />
+        <source srcset="../imgs/4.jpg" />
+        <img src="../imgs/ln.jpg" alt="Bird Image" style="width:auto;" />
+    </picture>
+
+
+    <p style="font-size:5vw;">Responsive Text with vw units</p>
+    <p style="font-size:3vw;">Resize the browser window to see how the text size scales.</p>
+    <p style="font-size:2vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+    <br>
+
+
+    <p>Media Queries</p>
+    <div class="left">
+        <p>Left</p>
+    </div>
+    <div class="mid">
+        <p>Middle</p>
+    </div>
+    <div class="right">
+        <p>Right</p>
+    </div>
+
+</body>
+
+</html>

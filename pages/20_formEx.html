@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML form element example</title>
+</head>
+
+<body>
+    <form action="abc.jsp" target="_self" method="get" accept-charset="" autocomplete="on" oninput="age.value=parseInt(a.value)+parseInt(b.value)">
+        <fieldset>
+            <legend>Personal Information</legend>
+            First Name:<br/>
+            <input name="fName" type="text" value="" placeholder="Enter your first name" required></input>
+            <br/> Middle Name:<br/>
+            <input name="mName" type="text" value="" pattern=".avi" />
+            <br/> Last Name: <br/>
+            <input name="lName" type="text" value="GORU" readonly maxlength="7">
+
+            <br/>Gender: <br/>
+            <input name="gender" type="radio" value="female" /> Female<br/>
+            <input name="gender" type="radio" value="male" checked/> Male<br/>
+            <input name="gender" type="radio" value="other" /> Other
+            <br/> Select you identity from drop down list: <br/>
+            <select name="uid" class="" size="2" multiple>
+                <option value="pan">PAN</option>
+                <option value="aadhar" selected>AADHAR</option>
+                <option value="eid">Election(Voter) ID</option>
+                <option value="did">Driving License Number</option>
+            </select>
+            <input type="text" name="uid_val" />
+            <br/>
+            <textarea name="comments" rows="4" cols="80" placeholder="Please provide your comments here."></textarea>
+            <button type="button" name="button" onclick="alert('Hi')">Click Me!</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>HTML5 elemet <strong>&lt;datalist&gt;</strong></legend>
+            <input list="browsers" name="browsers">
+            <datalist class="" id="browsers">
+                <option value="Internet Explorer"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Opera"></option>
+            </datalist>
+
+            <br/>Age(>=18):<output name="age" for="a b"></output>
+            <br/>
+            <input type="number" id="a" name="a" value="18" style="width:35px" disabled/> + 0 <input type="range" id="b" name="b" value="0" /> 100
+            <br/>
+        </fieldset>
+        <input type="submit" value="submit" />
+    </form>
+</body>
+
+</html>

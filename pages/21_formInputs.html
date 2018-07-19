@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML form inputs</title>
+    <style>
+        strong {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="abc.jsp" target="_self" oninput="">
+        <h3>Input Types</h3>
+        <pre><ol type="1"><li><strong>type="text"</strong>
+Name : <input type="text" name="fullName" disabled>
+                </li>
+                <li><strong>type="text"</strong>
+User ID : <input type="text" name="uid">
+</li>
+                <li><strong>type="password"</strong>
+Password: <input type="password" name="pwd">
+                </li>
+                <li><strong>type="radio"</strong>
+Gender :
+<input type="radio" name="gender" value="male" checked> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+                </li>
+                <li><strong>type="checkbox"</strong>
+<input type="checkbox" name="UG" value="UG" selected > UG
+<input type="checkbox" name="PG" value="PG" > PG
+                </li>
+                <li><strong>type="button"</strong>
+<input type="button" name="b1" value="Click Me!" onclick="alert('Hi')"/>
+                </li>
+            </ol></pre>
+        <h3>Input Types(HTML5)</h3>
+        <pre><ol>
+                <li><strong>type="color"</strong>
+<input type="color" name="favColor" />
+                </li>
+                <li><strong>type="date"</strong>
+<input type="date" name="bDay" min="2000-01-02" max="2020-01-02">
+                </li>
+                <li><strong>type="datetime-local"</strong>
+<input type="datetime-local" name="mDay">
+                </li>
+                <li><strong>type="email"</strong>
+Email : <input type="email" name="personalMail">
+                </li>
+                <li><strong>type="search"</strong>
+Search : <input type="search" name="search1">
+                </li>
+                <li><strong>type="tel"</strong>
+Telephone No : <input type="tel" name="telNo">
+                </li>
+                <li><strong>type="time"</strong>
+Time : <input type="time" name="currentTime">
+                </li>
+                <li><strong>type="file"</strong>
+<input type="file">
+                </li>
+                <li><strong>type="month"</strong>
+Month and Year: <input type="month" name="bMonthYear" />
+                </li>
+                <li><strong>type="number"</strong>
+Number: <input type="number" name="age" min="1" max="100"/>
+                </li>
+                <li><strong>type="url"</strong>
+URL: <input type="url" name="gitUrl">
+                </li>
+                <li><strong>type="week"</strong>
+Sprint start week: <input type="week" name="sprintS_week">
+                </li>
+            </ol>
+        </pre>
+        <br/> <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+
+    </form>
+</body>
+
+</html>
